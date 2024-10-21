@@ -13,17 +13,46 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="row">
+      <div class="col-3 mt-5 ms-5">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="card-width">Card Width</span>
+          <input
+            type="text"
+            class="form-control"
+            id="card-width-input"
+            placeholder="Width"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+          />
+          <span class="input-group-text" id="card-height">Card Height</span>
+          <input
+            type="text"
+            class="form-control"
+            id="card-height-input"
+            placeholder="Height"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+          />
+        </div>
       </div>
     </div>
+
+    <div class="row mb-0">
+      <div class="d-flex justify-content-center" id="card-gen-timer">
+        Date timer
+      </div>
+    </div>
+
+    <div class="container-fluid text-center mt-0">
+      <div class="card">
+        <div class="palo p-0 m-0"></div>
+        <div class="Numero"></div>
+        <div class="palo p-0 m-0"></div>
+      </div>
+    </div>
+    <button class="generation">
+      Generate
+    </button>
   </body>
 </html>
